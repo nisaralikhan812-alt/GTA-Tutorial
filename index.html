@@ -1,40 +1,65 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTA V Secret Vault & Guide | AK Official Khan 42</title>
+    <title>GTA V Ultimate Vault | AK Official Khan 42</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
         }
         body {
-            background-color: #0b0b10;
+            background-color: #08080c;
             color: #ffffff;
             line-height: 1.6;
         }
         header {
             background: linear-gradient(135deg, #ff0055, #7a00ff);
             text-align: center;
-            padding: 45px 20px;
+            padding: 40px 20px;
             border-bottom: 4px solid #00e5ff;
-            box-shadow: 0 5px 20px rgba(255,0,85,0.4);
+            box-shadow: 0 5px 25px rgba(255,0,85,0.4);
         }
         header h1 {
-            font-size: 2.8rem;
+            font-size: 3rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 10px;
-            color: #fff;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
         }
         header p {
             font-size: 1.2rem;
             color: #f0f0f0;
+            font-weight: 600;
+        }
+        nav {
+            background: #12121a;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #222233;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        nav a {
+            color: #00e5ff;
+            text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: #ff0055;
+            color: #fff;
         }
         .container {
             max-width: 1100px;
@@ -42,67 +67,62 @@
             padding: 0 20px;
         }
         .section {
-            background: #161622;
+            background: #13131c;
             border-radius: 14px;
-            padding: 25px;
-            margin-bottom: 30px;
+            padding: 30px;
+            margin-bottom: 40px;
             border-left: 6px solid #00e5ff;
             box-shadow: 0 6px 20px rgba(0,0,0,0.6);
         }
         .section h2 {
-            font-size: 1.9rem;
+            font-size: 2rem;
             color: #00e5ff;
             margin-bottom: 20px;
-            border-bottom: 2px solid #252536;
+            border-bottom: 2px solid #222233;
             padding-bottom: 10px;
         }
-        .fact-card, .tip-card {
-            background: #212130;
-            padding: 18px;
+        .card {
+            background: #1c1c28;
+            padding: 20px;
             border-radius: 10px;
             margin-bottom: 15px;
-            border: 1px solid #2e2e42;
-            transition: transform 0.2s;
+            border: 1px solid #2a2a3d;
+            transition: transform 0.2s, border-color 0.2s;
         }
-        .fact-card:hover, .tip-card:hover {
+        .card:hover {
             transform: translateY(-3px);
             border-color: #ff0055;
         }
-        .fact-card h3, .tip-card h3 {
+        .card h3 {
             color: #ff3377;
             margin-bottom: 8px;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        ul li {
-            background: #212130;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 12px;
-            border-left: 4px solid #ff0055;
+        .cheat-code {
+            background: #000;
+            color: #00ffcc;
+            font-family: monospace;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 1.1rem;
+            border: 1px dashed #00ffcc;
         }
         footer {
             text-align: center;
-            padding: 30px;
-            background: #07070a;
-            border-top: 2px solid #1f1f2e;
-            margin-top: 40px;
+            padding: 35px;
+            background: #050508;
+            border-top: 2px solid #1a1a26;
+            margin-top: 50px;
         }
         footer p {
-            color: #bbb;
-            font-size: 1.05rem;
-            margin: 5px 0;
+            color: #aaa;
+            font-size: 1.1rem;
+            margin: 6px 0;
         }
         .owner-badge {
             color: #00e5ff;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        .highlight {
-            color: #ffbb00;
             font-weight: bold;
         }
     </style>
@@ -110,67 +130,108 @@
 <body>
 
     <header>
-        <h1>GTA V Ultimate Secret Vault</h1>
-        <p>🔥 Sabse Khatarnak Facts, Hidden Locations aur Tips ka Khazana!</p>
+        <h1>GTA V Ultimate Vault</h1>
+        <p>🔥 The Ultimate Hub for Facts, Cheats, Secrets & Pro Guides!</p>
     </header>
+
+    <!-- Navigation Options Bar -->
+    <nav>
+        <a href="#facts">Facts</a>
+        <a href="#cheats">Cheats & Codes</a>
+        <a href="#locations">Secret Locations</a>
+        <a href="#tips">Tips & Tricks</a>
+    </nav>
 
     <div class="container">
 
-        <!-- Interesting Facts Section -->
-        <div class="section">
-            <h2>🔥 Mind-Blowing & Random Facts</h2>
+        <!-- Facts Section -->
+        <div id="facts" class="section">
+            <h2>🔥 Mind-Blowing Facts</h2>
             
-            <div class="fact-card">
-                <h3>1. Map ka Asli Size!</h3>
-                <p>Kya aapko pata hai? GTA V ka Los Santos itna bada hai ki ismein San Andreas, GTA IV aur Red Dead Redemption ke maps ko aaram se fit kiya ja sakta hai!</p>
+            <div class="card">
+                <h3>1. Massive Open World Map</h3>
+                <p>The map of Los Santos in GTA V is so enormous that it can comfortably fit the entire maps of San Andreas, GTA IV, and Red Dead Redemption combined!</p>
             </div>
 
-            <div class="fact-card">
-                <h3>2. Asli Chehre Wale Characters</h3>
-                <p>Game ke main characters (Michael, Franklin aur Trevor) sirf animation nahi hain, balki unke voice actors ne hi motion capture ke zariye unhe real life jaisa banaya hai.</p>
+            <div class="card">
+                <h3>2. Real Motion-Capture Actors</h3>
+                <p>The main protagonists (Michael, Franklin, and Trevor) were brought to life using advanced motion-capture technology matching their actual real-life voice actors.</p>
             </div>
 
-            <div class="fact-card">
-                <h3>3. Paani ke Neeche Ka Khazana</h3>
-                <p>Samudra ki gahraiyon mein ek crash hua plane aur ek chupa hua UFO bhi milta hai, jise dekh kar sabka dimaag ghoom jata hai!</p>
+            <div class="card">
+                <h3>3. Deep Sea Mysteries</h3>
+                <p>The ocean floor hides incredible secrets, including a crashed commercial airplane and a mysterious submerged UFO waiting to be discovered.</p>
             </div>
         </div>
 
-        <!-- Secret Islands & Locations -->
-        <div class="section">
-            <h2>🏝️ Secret Islands & Hidden Locations</h2>
-            <ul>
-                <li><span class="highlight">The Frozen Alien:</span> Prologue mission ke dauran jab aap برف (snow) wale area mein hote hain, toh pul ke neeche ek alien jam kar baitha milta hai!</li>
-                <li><span class="highlight">Mount Gordo ka Bhoot:</span> Raat ke theek 11:00 baje se 12:00 baje ke beech Mount Gordo ki choti par ek aurat ka khaufnak bhoot dikhayi deta hai.</li>
-                <li><span class="highlight">Secret Military Base (Fort Zancudo):</span> Yahan ghusna sabse khatarnak hai kyunki yahan se fighter jet churane par turant 4-star wanted level mil jata hai!</li>
-                <li><span class="highlight">Mount Chiliad ka Mysterious Map:</span> Mountain station ki deewaron par ek ajeeb sa UFO aur jetpack ka naksha carved hai jo aaj tak ek raaz hai.</li>
-            </ul>
+        <!-- Cheats & Codes Section -->
+        <div id="cheats" class="section">
+            <h2>⚡ Popular Cheat Codes</h2>
+            
+            <div class="card">
+                <h3>Invincibility (God Mode)</h3>
+                <p>Lasts for 5 minutes, making you completely immune to all damage.</p>
+                <div class="cheat-code">PS4/PS5: RIGHT, X, RIGHT, LEFT, RIGHT, R1, RIGHT, LEFT, X, TRIANGLE</div>
+            </div>
+
+            <div class="card">
+                <h3>Spawn Buzzard Attack Chopper</h3>
+                <p>Instantly spawn a heavily armed military helicopter right next to you.</p>
+                <div class="cheat-code">PS4/PS5: CIRCLE, CIRCLE, L1, CIRCLE, CIRCLE, CIRCLE, L1, L2, R1, TRIANGLE, CIRCLE, TRIANGLE</div>
+            </div>
+
+            <div class="card">
+                <h3>Give Weapons & Ammo</h3>
+                <p>Equips you with a full inventory of guns and maximum ammo instantly.</p>
+                <div class="cheat-code">PS4/PS5: TRIANGLE, R2, LEFT, L1, X, RIGHT, TRIANGLE, DOWN, SQUARE, L1, L1, L1</div>
+            </div>
         </div>
 
-        <!-- Tips & Tricks -->
-        <div class="section">
+        <!-- Secret Locations Section -->
+        <div id="locations" class="section">
+            <h2>🏝️ Secret Locations & Easter Eggs</h2>
+            
+            <div class="card">
+                <h3>The Frozen Alien</h3>
+                <p>During the prologue mission in the snow-covered North Yankton area, look under the frozen bridge to find a fully preserved alien trapped in the ice.</p>
+            </div>
+
+            <div class="card">
+                <h3>The Mount Gordo Ghost</h3>
+                <p>Between 11:00 PM and 00:00 AM in-game time, visit the peak of Mount Gordo to witness the eerie apparition of a ghostly woman.</p>
+            </div>
+
+            <div class="card">
+                <h3>Fort Zancudo Military Base</h3>
+                <p>Infiltrating this high-security air base gives you access to steal top-tier fighter jets, triggering an instant 4-star wanted level.</p>
+            </div>
+        </div>
+
+        <!-- Tips & Tricks Section -->
+        <div id="tips" class="section">
             <h2>💡 Pro Tips & Tricks</h2>
-            <div class="tip-card">
-                <h3>💰 Maalamal Hone ka Tarika (Stock Market)</h3>
-                <p>Lester ke assassination missions karne se pehle apne saare paise BAWSAQ aur LCN stocks mein laga do, mission ke baad double profit milega!</p>
+            
+            <div class="card">
+                <h3>💰 Easy Stock Market Profits</h3>
+                <p>Invest all your money into target stocks through BAWSAQ and LCN *before* starting Lester’s assassination missions to multiply your cash exponentially.</p>
             </div>
 
-            <div class="tip-card">
-                <h3>🚗 Car Repair ka Shortcut</h3>
-                <p>Agar mission ke beech gadi buri tarah toot jaye, toh turant character switch karke dusre character par jao aur wapas aao—gadi ekdum naye jaisi chamakne lagegi!</p>
+            <div class="card">
+                <h3>🚗 Instant Car Repair</h3>
+                <p>If your vehicle is badly smashed up during a mission, simply switch to another character and switch right back—your car will be instantly restored to brand new condition!</p>
             </div>
 
-            <div class="tip-card">
-                <h3>🪂 Paani ke Neeche Bina Dum Ghute</h3>
-                <p>Jab bhi aap boat ya helicopter se samudra mein kudte hain, game automatically aapko scuba suit pehna deta hai jisse aap unlimited der paani ke andar reh sakte hain.</p>
+            <div class="card">
+                <h3>🪂 Automatic Scuba Gear</h3>
+                <p>Whenever you jump out of a boat or helicopter into deep ocean water, the game automatically equips your character with a scuba suit for infinite underwater breathing.</p>
             </div>
         </div>
 
     </div>
 
     <footer>
-        <p>Website Created by: <span class="owner-badge">Aman Ali Khan</span></p>
-        <p>Official YouTube Channel: <span class="highlight">AK Official Khan 42</span></p>
+        <p>Website Created by: <span class="owner-badge">Amaan Ali Khan</span></p>
+        <p>Official YouTube Channel: <span style="color: #ffbb00; font-weight: bold;">AK Official Khan 42</span></p>
     </footer>
 
 </body>
