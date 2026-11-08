@@ -1,224 +1,412 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTA V Master Vault | AK Official Khan 42</title>
-    <style>
-        :root {
-            --bg-color: #0a0e17;
-            --card-bg: #141a24;
-            --accent-color: #00e5ff;
-            --border-color: #222c3d;
-            --text-main: #f0f4f8;
-            --text-dim: #94a3b8;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-size: 14px;
-            line-height: 1.5;
-            padding-bottom: 50px;
-        }
-
-        /* Top Header */
-        .top-header {
-            background: #06090e;
-            border-bottom: 1px solid var(--border-color);
-            padding: 16px 20px;
-            text-align: center;
-        }
-
-        .top-header h1 {
-            font-size: 1.4rem;
-            color: #ffffff;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .top-header h1 span {
-            color: var(--accent-color);
-        }
-
-        .creator-tag {
-            font-size: 0.8rem;
-            color: var(--text-dim);
-            margin-top: 4px;
-        }
-
-        .creator-tag strong {
-            color: var(--accent-color);
-        }
-
-        /* Sticky Tab Navigation Bar */
-        .tab-nav {
-            display: flex;
-            justify-content: flex-start;
-            overflow-x: auto;
-            background: #06090e;
-            padding: 10px 12px;
-            gap: 8px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid var(--border-color);
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .tab-nav::-webkit-scrollbar {
-            display: none;
-        }
-
-        .tab-btn {
-            background: var(--card-bg);
-            color: var(--text-dim);
-            border: 1px solid var(--border-color);
-            padding: 8px 14px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            white-space: nowrap;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .tab-btn.active {
-            background: var(--accent-color);
-            color: #000000;
-            border-color: var(--accent-color);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 800px;
-            margin: 15px auto;
-            padding: 0 12px;
-        }
-
-        .content-section {
-            display: none;
-        }
-
-        .content-section.active {
-            display: block;
-        }
-
-        .grid-cards {
-            display: grid;
-            gap: 12px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 14px;
-        }
-
-        .card h3 {
-            font-size: 1rem;
-            color: #ffffff;
-            margin-bottom: 6px;
-        }
-
-        .card p {
-            font-size: 0.85rem;
-            color: var(--text-dim);
-        }
-
-        /* Code Box */
-        .code-box {
-            margin-top: 10px;
-            background: #080b12;
-            border: 1px solid var(--border-color);
-            border-left: 3px solid var(--accent-color);
-            padding: 8px 10px;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.8rem;
-            color: var(--accent-color);
-            word-break: break-all;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.8rem;
-            color: var(--text-dim);
-            border-top: 1px solid var(--border-color);
-            margin-top: 30px;
-        }
-
-        footer strong {
-            color: var(--accent-color);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTA TUTORIAL | Ultimate GTA 5 Guide</title>
+<meta name="description" content="GTA Tutorial - GTA 5 cheat codes, secret locations, mods, tips and complete guides.">
+<style>
+:root {
+  --bg:#080c0b;
+  --panel:#111916;
+  --green:#a6ff00;
+  --muted:#9ca99f;
+  --border:#26352c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:#f3f7f3;
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+header{
+  position:sticky;top:0;z-index:10;
+  background:#080c0bf2;
+  border-bottom:1px solid var(--border);
+  padding:15px 6%;
+  display:flex;justify-content:space-between;
+  align-items:center;flex-wrap:wrap;gap:12px;
+}
+.logo{font-size:23px;font-weight:900;color:var(--green)}
+.logo span{color:white}
+nav{display:flex;gap:17px;flex-wrap:wrap}
+nav a{color:#ddd;text-decoration:none;font-size:13px}
+nav a:hover{color:var(--green)}
+.hero{
+  min-height:420px;padding:90px 7%;
+  display:flex;align-items:center;
+  background:
+  linear-gradient(90deg,#080c0b 10%,#080c0bdf 60%,#080c0b70),
+  radial-gradient(ellipse at 80% 40%,#36551d,#101a13 55%,#080c0b);
+}
+.hero h1{font-size:clamp(38px,7vw,72px);line-height:1.08}
+.hero h1 span{color:var(--green)}
+.hero p{max-width:600px;color:#bdc8bd;margin:18px 0}
+.btn{
+  display:inline-block;padding:12px 20px;
+  background:var(--green);color:#10150c;
+  border:0;border-radius:5px;
+  font-weight:bold;text-decoration:none;
+  cursor:pointer;
+}
+.btn:hover{filter:brightness(1.15)}
+.btn.secondary{background:#202c24;color:white;border:1px solid var(--border)}
+.container{width:min(1100px,90%);margin:auto}
+section{padding:55px 0}
+.section-title{font-size:30px;margin-bottom:8px}
+.section-title span{color:var(--green)}
+.subtitle{color:var(--muted);margin-bottom:25px}
+.search{
+  width:100%;padding:14px;
+  background:#111916;color:white;
+  border:1px solid var(--border);
+  border-radius:6px;font-size:15px;
+  margin:15px 0;
+}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:22px}
+.filter{
+  background:#17221b;color:#ddd;
+  border:1px solid var(--border);
+  padding:8px 14px;border-radius:20px;cursor:pointer;
+}
+.filter.active,.filter:hover{
+  background:var(--green);color:#111;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(245px,1fr));
+  gap:17px;
+}
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:9px;padding:20px;
+  transition:.2s;
+}
+.card:hover{transform:translateY(-3px);border-color:var(--green)}
+.card h3{color:var(--green);margin-bottom:9px}
+.card p{color:#c1cbc2;font-size:14px}
+.tag{
+  display:inline-block;color:var(--green);
+  background:#26351b;padding:3px 9px;
+  border-radius:20px;font-size:11px;margin-bottom:10px;
+}
+.code{
+  background:#070b08;padding:10px;
+  border-radius:5px;margin:12px 0;
+  color:#e8f6d9;word-break:break-word;
+  font-family:monospace;
+}
+.copy{padding:8px 12px;font-size:12px}
+.notice{
+  padding:15px;background:#202b1b;
+  border-left:4px solid var(--green);
+  color:#dce9d5;margin:20px 0;border-radius:4px;
+}
+.steps{padding-left:20px;color:#c8d1c8}
+.steps li{margin:8px 0}
+.creator{
+  text-align:center;
+  background:linear-gradient(135deg,#17251a,#0c110e);
+  border:1px solid var(--border);
+  padding:35px 20px;border-radius:12px;
+}
+.creator h2{color:var(--green);font-size:30px}
+.creator p{color:#c3cec4;margin:8px}
+.channel{
+  display:inline-block;
+  margin:8px;padding:12px 18px;
+  border:1px solid var(--border);
+  border-radius:6px;color:white;
+  background:#111916;
+}
+footer{
+  text-align:center;padding:28px 15px;
+  border-top:1px solid var(--border);
+  color:#9ba69c;font-size:13px;
+}
+footer strong{color:var(--green)}
+.hidden{display:none}
+@media(max-width:600px){
+  header{justify-content:center}
+  nav{justify-content:center}
+  .hero{padding:65px 6%;min-height:350px}
+  section{padding:40px 0}
+}
+</style>
 </head>
 <body>
 
-    <div class="top-header">
-        <h1>GTA V <span>Vault</span></h1>
-        <div class="creator-tag">Created by <strong>Amaan Ali Khan</strong> | <strong>AK Official Khan 42</strong></div>
+<header>
+  <div class="logo">GTA<span>.</span>TUTORIAL</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#cheats">Cheats</a>
+    <a href="#locations">Locations</a>
+    <a href="#mods">Mods</a>
+    <a href="#guides">Guides</a>
+    <a href="#creator">Creator</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="tag">THE ULTIMATE GTA 5 FAN GUIDE</div>
+    <h1>EXPLORE THE<br><span>WORLD OF GTA 5</span></h1>
+    <p>Discover cheat codes, hidden locations, amazing mods, secret tricks and helpful tutorials. Everything GTA 5 players need in one place.</p>
+    <a href="#cheats" class="btn">EXPLORE CHEATS</a>
+    <a href="#locations" class="btn secondary">SECRET LOCATIONS</a>
+  </div>
+</section>
+
+<section id="cheats">
+<div class="container">
+  <h2 class="section-title">GTA 5 <span>CHEAT CODES</span></h2>
+  <p class="subtitle">Search cheat codes and copy PC commands or phone numbers.</p>
+  <div class="notice">Important: These built-in cheats are for Story Mode, not GTA Online. Cheats can disable achievements or trophies for the current session. Save your game first.</div>
+
+  <input id="search" class="search" placeholder="Search cheat codes..." oninput="renderCheats()">
+  <div class="filters">
+    <button class="filter active" onclick="setFilter('All',this)">All</button>
+    <button class="filter" onclick="setFilter('Player',this)">Player</button>
+    <button class="filter" onclick="setFilter('Weapons',this)">Weapons</button>
+    <button class="filter" onclick="setFilter('Vehicles',this)">Vehicles</button>
+    <button class="filter" onclick="setFilter('World',this)">World</button>
+  </div>
+  <div class="grid" id="cheatGrid"></div>
+</div>
+</section>
+
+<section id="locations">
+<div class="container">
+  <h2 class="section-title">SECRET <span>LOCATIONS</span></h2>
+  <p class="subtitle">Explore interesting hidden places in GTA 5 Story Mode.</p>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">MYSTERY</span>
+      <h3>Mount Gordo Ghost</h3>
+      <p>Visit Mount Gordo at night and look around the mountain area for the mysterious ghost appearance. The sighting is associated with a specific in-game time.</p>
+    </article>
+    <article class="card">
+      <span class="tag">UNDERWATER</span>
+      <h3>Underwater UFO</h3>
+      <p>Explore the ocean near the northern part of the map. A mysterious UFO wreck can be found underwater.</p>
+    </article>
+    <article class="card">
+      <span class="tag">MYSTERY</span>
+      <h3>Mount Chiliad</h3>
+      <p>Visit the Mount Chiliad cable car station and examine the mural. It is connected to one of GTA 5's famous mysteries.</p>
+    </article>
+    <article class="card">
+      <span class="tag">MILITARY</span>
+      <h3>Fort Zancudo</h3>
+      <p>Explore the military base area. It contains military aircraft and restricted facilities. Entering without preparation can trigger a wanted level.</p>
+    </article>
+    <article class="card">
+      <span class="tag">UNDERGROUND</span>
+      <h3>Abandoned Mine</h3>
+      <p>Look for the hidden mine entrance in the Great Chaparral area. Explore carefully and bring a flashlight.</p>
+    </article>
+    <article class="card">
+      <span class="tag">EASTER EGG</span>
+      <h3>Frozen Alien</h3>
+      <p>During the Prologue in North Yankton, explore the frozen river beneath the bridge to find an unusual frozen figure.</p>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="mods">
+<div class="container">
+  <h2 class="section-title">GTA 5 <span>MODS</span></h2>
+  <p class="subtitle">Learn about popular PC mod categories and safe installation practices.</p>
+  <div class="grid">
+    <article class="card">
+      <h3>🚗 Vehicle Mods</h3>
+      <p>Add custom cars, bikes and other vehicles to your single-player GTA 5 experience.</p>
+    </article>
+    <article class="card">
+      <h3>🌆 Graphics Mods</h3>
+      <p>Explore visual enhancement mods that change lighting, weather, textures and environment details.</p>
+    </article>
+    <article class="card">
+      <h3>🚔 Police Mods</h3>
+      <p>Discover single-player police roleplay and emergency response modifications.</p>
+    </article>
+    <article class="card">
+      <h3>🦸 Character Mods</h3>
+      <p>Learn about character models, outfits and custom player appearances.</p>
+    </article>
+  </div>
+  <div class="notice">Mod safety: Use reputable sources, read installation instructions, scan downloaded files and back up your game files. Avoid using mods in GTA Online.</div>
+</div>
+</section>
+
+<section id="guides">
+<div class="container">
+  <h2 class="section-title">TUTORIALS & <span>TIPS</span></h2>
+  <p class="subtitle">Helpful guides for new and experienced players.</p>
+  <div class="grid">
+    <article class="card">
+      <h3>How to Install GTA 5 Mods</h3>
+      <ol class="steps">
+        <li>Back up your game files.</li>
+        <li>Check your GTA 5 version.</li>
+        <li>Read the mod creator's instructions.</li>
+        <li>Install required tools only from trusted sources.</li>
+        <li>Test mods in Story Mode.</li>
+      </ol>
+    </article>
+    <article class="card">
+      <h3>Improve Game Performance</h3>
+      <ol class="steps">
+        <li>Update your graphics drivers.</li>
+        <li>Adjust resolution and graphics settings.</li>
+        <li>Close unnecessary background apps.</li>
+        <li>Check available storage space.</li>
+      </ol>
+    </article>
+    <article class="card">
+      <h3>Beginner Tips</h3>
+      <ol class="steps">
+        <li>Explore the map carefully.</li>
+        <li>Learn the character abilities.</li>
+        <li>Use cover during missions.</li>
+        <li>Save your progress regularly.</li>
+      </ol>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="creator">
+<div class="container">
+  <div class="creator">
+    <span class="tag">WEBSITE CREATOR</span>
+    <h2>AMAAN ALI KHAN</h2>
+    <p>Welcome to my GTA Tutorial fan website!</p>
+    <div class="channel">
+      <strong>AK Official Khan 42</strong><br>
+      <small>YouTube Partner Channel</small>
     </div>
-
-    <!-- Navigation Tabs -->
-    <div class="tab-nav">
-        <button class="tab-btn active" onclick="openTab(event, 'cheats')">⚡ Cheats & Codes</button>
-        <button class="tab-btn" onclick="openTab(event, 'facts')">🔥 Facts</button>
-        <button class="tab-btn" onclick="openTab(event, 'locations')">📍 Secret Locations</button>
-        <button class="tab-btn" onclick="openTab(event, 'tips')">💡 Tips & Tricks</button>
+    <div class="channel">
+      <strong>NK Official Cooking 52</strong><br>
+      <small>YouTube Channel</small>
     </div>
+    <p>Created with passion for gaming and creativity.</p>
+  </div>
+</div>
+</section>
+</main>
 
-    <div class="container">
+<footer>
+  <p><strong>GTA TUTORIAL</strong> | Created by AMAAN ALI KHAN</p>
+  <p>Fan-made educational website. Not affiliated with or endorsed by Rockstar Games.</p>
+  <p>Grand Theft Auto and related trademarks belong to their respective owners.</p>
+  <p>© <span id="year"></span> GTA Tutorial. All rights reserved.</p>
+</footer>
 
-        <!-- Cheats Section -->
-        <div id="cheats" class="content-section active">
-            <div class="grid-cards">
-                <div class="card">
-                    <h3>Invincibility (5 Min God Mode)</h3>
-                    <p>Makes your character completely immune to all damage for 5 minutes.</p>
-                    <div class="code-box">PS4/PS5: RIGHT, X, RIGHT, LEFT, RIGHT, R1, RIGHT, LEFT, X, TRIANGLE</div>
-                </div>
+<script>
+const cheats = [
+ {name:"Invincibility",cat:"Player",pc:"PAINKILLER",phone:"1-999-724-654-5537"},
+ {name:"Max Health & Armor",cat:"Player",pc:"TURTLE",phone:"1-999-887-853"},
+ {name:"Recharge Special Ability",cat:"Player",pc:"POWERUP",phone:"1-999-769-3787"},
+ {name:"Fast Run",cat:"Player",pc:"CATCHME",phone:"1-999-228-2463"},
+ {name:"Fast Swim",cat:"Player",pc:"GOTGILLS",phone:"1-999-468-44557"},
+ {name:"Super Jump",cat:"Player",pc:"HOPTOIT",phone:"1-999-467-8648"},
+ {name:"Give Weapons",cat:"Weapons",pc:"TOOLUP",phone:"1-999-866-587"},
+ {name:"Explosive Ammo",cat:"Weapons",pc:"HIGHEX",phone:"1-999-444-439"},
+ {name:"Flaming Bullets",cat:"Weapons",pc:"INCENDIARY",phone:"1-999-462-363-4279"},
+ {name:"Explosive Melee",cat:"Weapons",pc:"HOTHANDS",phone:"1-999-4684-2637"},
+ {name:"Spawn Comet",cat:"Vehicles",pc:"COMET",phone:"1-999-266-38"},
+ {name:"Spawn Rapid GT",cat:"Vehicles",pc:"RAPIDGT",phone:"1-999-727-4348"},
+ {name:"Spawn Sanchez",cat:"Vehicles",pc:"OFFROAD",phone:"1-999-633-7623"},
+ {name:"Spawn BMX",cat:"Vehicles",pc:"BANDIT",phone:"1-999-226-348"},
+ {name:"Spawn Buzzard",cat:"Vehicles",pc:"BUZZOFF",phone:"1-999-289-9633"},
+ {name:"Lower Wanted Level",cat:"World",pc:"LAWYERUP",phone:"1-999-5299-3787"},
+ {name:"Raise Wanted Level",cat:"World",pc:"FUGITIVE",phone:"1-999-3844-8483"},
+ {name:"Change Weather",cat:"World",pc:"MAKEITRAIN",phone:"1-999-625-348-7246"},
+ {name:"Moon Gravity",cat:"World",pc:"FLOATER",phone:"1-999-356-2837"},
+ {name:"Drunk Mode",cat:"Player",pc:"LIQUOR",phone:"1-999-547-861"}
+];
 
-                <div class="card">
-                    <h3>Spawn Buzzard Chopper</h3>
-                    <p>Instantly spawns a fully armed military attack helicopter right next to you.</p>
-                    <div class="code-box">PS4/PS5: CIRCLE, CIRCLE, L1, CIRCLE, CIRCLE, CIRCLE, L1, L2, R1, TRIANGLE, CIRCLE, TRIANGLE</div>
-                </div>
+let activeFilter="All";
 
-                <div class="card">
-                    <h3>Max Weapons & Ammo</h3>
-                    <p>Fills your inventory instantly with high-tier weapons and maximum bullets.</p>
-                    <div class="code-box">PS4/PS5: TRIANGLE, R2, LEFT, L1, X, RIGHT, TRIANGLE, DOWN, SQUARE, L1, L1, L1</div>
-                </div>
-            </div>
-        </div>
+function setFilter(category,button){
+ activeFilter=category;
+ document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
+ button.classList.add("active");
+ renderCheats();
+}
 
-        <!-- Facts Section -->
-        <div id="facts" class="content-section">
-            <div class="grid-cards">
-                <div class="card">
-                    <h3>Massive Open World Size</h3>
-                    <p>The map of Los Santos in GTA V easily fits the entire maps of San Andreas, GTA IV, and Red Dead Redemption combined.</p>
-                </div>
+function renderCheats(){
+ const query=document.getElementById("search").value.toLowerCase();
+ const filtered=cheats.filter(c=>
+  (activeFilter==="All"||c.cat===activeFilter)&&
+  (c.name.toLowerCase().includes(query)||
+   c.pc.toLowerCase().includes(query)||
+   c.phone.includes(query))
+ );
+ const grid=document.getElementById("cheatGrid");
+ grid.innerHTML="";
+ if(!filtered.length){
+  grid.innerHTML='<p>No cheat codes found. Try another search.</p>';
+  return;
+ }
+ filtered.forEach(c=>{
+  const card=document.createElement("article");
+  card.className="card";
+  const title=document.createElement("h3");
+  title.textContent=c.name;
+  const tag=document.createElement("span");
+  tag.className="tag";
+  tag.textContent=c.cat;
+  const pcLabel=document.createElement("p");
+  pcLabel.textContent="PC CODE";
+  const pc=document.createElement("div");
+  pc.className="code";
+  pc.textContent=c.pc;
+  const pcButton=document.createElement("button");
+  pcButton.className="btn copy";
+  pcButton.textContent="Copy PC Code";
+  pcButton.onclick=()=>copyText(c.pc,pcButton);
+  const phoneLabel=document.createElement("p");
+  phoneLabel.textContent="IN-GAME PHONE";
+  phoneLabel.style.marginTop="12px";
+  const phone=document.createElement("div");
+  phone.className="code";
+  phone.textContent=c.phone;
+  const phoneButton=document.createElement("button");
+  phoneButton.className="btn secondary copy";
+  phoneButton.textContent="Copy Phone Number";
+  phoneButton.onclick=()=>copyText(c.phone,phoneButton);
+  card.append(tag,title,pcLabel,pc,pcButton,phoneLabel,phone,phoneButton);
+  grid.appendChild(card);
+ });
+}
 
-                <div class="card">
-                    <h3>Real Voice & Motion-Capture</h3>
-                    <p>Michael, Franklin, and Trevor were brought to life using real-life facial scanning and physical performance capture of their actors.</p>
-                </div>
+async function copyText(value,button){
+ try{
+  await navigator.clipboard.writeText(value);
+  button.textContent="Copied!";
+ }catch(e){
+  const input=document.createElement("textarea");
+  input.value=value;
+  document.body.appendChild(input);
+  input.select();
+  document.execCommand("copy");
+  input.remove();
+  button.textContent="Copied!";
+ }
+ setTimeout(()=>button.textContent=button.classList.contains("secondary")?"Copy Phone Number":"Copy PC Code",1500);
+}
 
-                <div class="card">
-                    <h3>Deep Sea Secrets</h3>
-                    <p>The ocean floor holds sunken cargo planes, crashed shipwrecks, and a completely submerged alien spaceship.</p>
-                </div>
-            </div>
-        </div>
+document.getElementById("year").textContent=new Date().getFullYear();
+renderCheats();
+</script>
+</body>
+</html>
