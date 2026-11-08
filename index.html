@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA Tutorial - Ultimate GTA 5 Fan Guide</title>
+    <style>
+        :root {
+            --bg-dark: #0f1215;
+            --card-bg: #181c22;
+            --lime: #39ff14;
+            --lime-hover: #2ecc71;
+            --text-light: #e0e6ed;
+            --text-muted: #94a3b8;
+            --border-color: #262d37;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0b0d0f;
+            border-bottom: 2px solid var(--lime);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--lime);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--lime);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(rgba(15, 18, 21, 0.85), rgba(15, 18, 21, 0.95)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80') center/cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .hero h1 span {
+            color: var(--lime);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            color: #fff;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            border-color: var(--lime);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--lime);
+            padding-left: 0.8rem;
+            color: #fff;
+        }
+
+        .tab-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: var(--card-bg);
+            color: var(--text-light);
+            border: 1px solid var(--border-color);
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background: var(--lime);
+            color: #000;
+            border-color: var(--lime);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--lime);
+        }
+
+        .card h3 {
+            color: var(--lime);
+            margin-bottom: 0.5rem;
+        }
+
+        .cheat-code {
+            display: inline-block;
+            background: #000;
+            color: var(--lime);
+            font-family: monospace;
+            font-size: 1.1rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            border: 1px dashed var(--lime);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #0b0d0f;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">GTA <span>Tutorial</span></div>
+        <nav>
+            <ul>
+                <li><a href="#cheats">Cheats</a></li>
+                <li><a href="#secrets">Secrets</a></li>
+                <li><a href="#mods">Mods</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#facts">Facts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Ultimate <span>GTA 5</span> Fan Guide</h1>
+        <p>Explore cheat codes, secret locations, top mods, and game-changing tips for Grand Theft Auto V.</p>
+        <div class="search-box">
+            <input type="text" id="searchInput" onkeyup="searchContent()" placeholder="Search cheats, tips, secrets...">
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <!-- CHEATS SECTION -->
+        <section id="cheats" style="margin-bottom: 4rem;">
+            <h2 class="section-title">GTA 5 PC Cheat Codes</h2>
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="filterCheats('all')">All Cheats</button>
+                <button class="tab-btn" onclick="filterCheats('player')">Player & World</button>
+                <button class="tab-btn" onclick="filterCheats('vehicles')">Vehicles</button>
+            </div>
+            <div class="grid" id="cheatGrid">
+                <div class="card cheat-card" data-category="player">
+                    <h3>Invincibility (5 Mins)</h3>
+                    <p>Become completely invulnerable to all damage.</p>
+                    <div class="cheat-code">PAINKILLER</div>
+                </div>
+                <div class="card cheat-card" data-category="player">
+                    <h3>Max Health & Armor</h3>
+                    <p>Restores your health and armor bars back to 100%.</p>
+                    <div class="cheat-code">TURTLE</div>
+                </div>
+                <div class="card cheat-card" data-category="player">
+                    <h3>Raise Wanted Level</h3>
+                    <p>Adds one extra star to your wanted status.</p>
+                    <div class="cheat-code">FUGITIVE</div>
+                </div>
+                <div class="card cheat-card" data-category="vehicles">
+                    <h3>Spawn Buzzard Helicopter</h3>
+                    <p>Spawns an armed Buzzard attack helicopter.</p>
+                    <div class="cheat-code">BUZZOFF</div>
+                </div>
+                <div class="card cheat-card" data-category="vehicles">
+                    <h3>Spawn Comet Sports Car</h3>
+                    <p>Spawns a fast two-door Comet sports car.</p>
+                    <div class="cheat-code">COMET</div>
+                </div>
+                <div class="card cheat-card" data-category="player">
+                    <h3>Super Jump</h3>
+                    <p>Leap extremely high into the air.</p>
+                    <div class="cheat-code">HOPTOIT</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECRETS SECTION -->
+        <section id="secrets" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Secret Locations</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Underwater UFO</h3>
+                    <p>Located off the northern coast of Paleto Bay deep beneath the ocean surface.</p>
+                </div>
+                <div class="card">
+                    <h3>Hidden Money Briefcases</h3>
+                    <p>Submerged package wrecks across the map holding up to $25,000 cash.</p>
+                </div>
+                <div class="card">
+                    <h3>Altruist Cult Camp</h3>
+                    <p>A secluded compound in Mount Chiliad home to unique weapons and collectibles.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODS SECTION -->
+        <section id="mods" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Popular GTA 5 Mods</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Script Hook V</h3>
+                    <p>Essential library for running custom script mods and native trainers.</p>
+                </div>
+                <div class="card">
+                    <h3>LSPDFR (Police Mod)</h3>
+                    <p>Transform GTA 5 into a complete police officer simulation game.</p>
+                </div>
+                <div class="card">
+                    <h3>NaturalVision Evolved</h3>
+                    <p>Photorealistic graphics overhaul improving weather, lighting, and textures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TUTORIALS & TIPS SECTION -->
+        <section id="tutorials" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Tips & Complete Tutorials</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Stock Market Guide</h3>
+                    <p>How to make billions using Lester's Assassination Missions and stock investments.</p>
+                </div>
+                <div class="card">
+                    <h3>100% Game Completion</h3>
+                    <p>Track all main missions, hobbies, random events, and collectibles needed for 100%.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FACTS SECTION -->
+        <section id="facts" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Interesting GTA 5 Facts</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Record-Breaking Launch</h3>
+                    <p>GTA 5 earned over $800 million worldwide within its first 24 hours of release.</p>
+                </div>
+                <div class="card">
+                    <h3>Massive Script</h3>
+                    <p>The game's story script spans thousands of pages with over 160,000 lines of dialogue.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; GTA Tutorial - Made for GTA 5 Fans. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function filterCheats(category) {
+            const cards = document.querySelectorAll('.cheat-card');
+            const buttons = document.querySelectorAll('.tab-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function searchContent() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (text.includes(input)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+              </html>
